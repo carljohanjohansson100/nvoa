@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Nacka Vatten och Avfall – bildvisning</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#innehall">Hoppa till innehållet</a>
+
+<header class="topbar" id="topbar">
+  <a class="brand" href="#top" id="brand">Nacka Vatten och Avfall</a>
+  <nav aria-label="Teman" id="nav"></nav>
+  <button type="button" class="btn" id="btn-present">Presentationsläge</button>
+</header>
+
+<main id="innehall">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="hero-media" id="hero-media"></div>
+    <div class="hero-text">
+      <h1 id="hero-title"></h1>
+      <p class="hero-sub" id="hero-sub"></p>
+      <p class="hero-intro" id="hero-intro"></p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#galleri">Se galleriet</a>
+        <button type="button" class="btn" id="btn-present2">Presentationsläge</button>
+      </div>
+    </div>
+    <button type="button" class="btn hero-toggle" id="hero-toggle" hidden aria-pressed="false">Pausa bakgrundsvideo</button>
+  </section>
+
+  <div id="themes"></div>
+
+  <section class="gallery" id="galleri" aria-labelledby="gal-title">
+    <h2 id="gal-title">Galleri</h2>
+    <div class="filters" id="filters" role="group" aria-label="Filter"></div>
+    <p class="count" id="count" aria-live="polite"></p>
+    <div class="grid" id="grid"></div>
+  </section>
+</main>
+
+<footer class="footer"><p id="footer-text"></p></footer>
+
+<dialog id="lightbox" class="lightbox" aria-label="Förstoring">
+  <div class="lb-stage" id="lb-stage"></div>
+  <p class="lb-caption" id="lb-caption"></p>
+  <div class="lb-bar">
+    <button type="button" class="btn" id="lb-prev" aria-label="Föregående">‹</button>
+    <span id="lb-count" aria-live="polite"></span>
+    <button type="button" class="btn" id="lb-next" aria-label="Nästa">›</button>
+    <button type="button" class="btn" id="lb-close">Stäng</button>
+  </div>
+</dialog>
+
+<dialog id="show" class="show" tabindex="-1" aria-label="Presentation">
+  <div class="show-stage" id="show-stage"></div>
+  <div class="show-bar" id="show-bar">
+    <span id="show-count"></span>
+    <span id="show-state"></span>
+    <button type="button" class="btn" id="show-close">Avsluta (Esc)</button>
+  </div>
+  <div class="show-progress" aria-hidden="true"><i id="show-progress"></i></div>
+</dialog>
+
+<noscript><p class="noscript">Sidan kräver JavaScript för att visa materialet.</p></noscript>
+<script src="content/manifest.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
