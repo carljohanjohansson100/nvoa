@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Konceptdemo av en webbplats för vatten och avfall. Inte NVOA:s officiella webbplats.">
+<title>NVOA – konceptdemo: vatten och avfall</title>
+<script>document.documentElement.classList.add("js")</script>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+<a class="skip" href="#innehall">Hoppa till innehållet</a>
+
+<div class="topwrap" id="topwrap">
+  <div class="banner" role="region" aria-label="Information om konceptdemon"><strong>Konceptdemo</strong> – inte NVOA:s officiella webbplats. Bilder och filmer är illustrationer.</div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="NVOA – konceptdemo, till sidans början">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M16 3C21 10 26 15 26 20a10 10 0 0 1-20 0C6 15 11 10 16 3Z" fill="#7cc4e8"/><path d="M6 21c4-3 7 3 10 0s6-3 10 0a10 10 0 0 1-20 0Z" fill="#2f7d4f"/></svg>
+      <span>NVOA – konceptdemo</span>
+    </a>
+    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Meny</button>
+    <nav id="nav" class="nav" aria-label="Huvudmeny">
+      <ul>
+        <li><a href="#vatten">Vattnets väg</a></li>
+        <li><a href="#avfall">Avfallets resa</a></li>
+        <li><a href="#bilder">Bilder</a></li>
+        <li><a href="#filmer">Filmer</a></li>
+        <li><a href="#drift">Driftinformation</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+
+<main id="innehall" tabindex="-1">
+
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="hero-media" data-media="hero-scen" data-bare="1" data-hero="1"></div>
+    <div class="hero-text">
+      <h1 id="hero-title">Vatten och avfall, varje dag</h1>
+      <p>Här får du koll på vattnets väg från sjön till kranen, lär dig sortera rätt och ser vad som händer nära dig.</p>
+      <div class="ctas">
+        <a class="btn btn-accent" href="#drift">Driftinformation</a>
+        <a class="btn btn-light" href="#avfall">Sortera rätt</a>
+      </div>
+    </div>
+    <button class="hero-toggle" id="hero-toggle" type="button" hidden>Pausa rörelsen</button>
+  </section>
+
+  <section class="section" id="vatten" aria-labelledby="vatten-h">
+    <div class="wrap">
+      <header class="section-head">
+        <h2 id="vatten-h">Vattnets väg</h2>
+        <p class="lead">Följ vattnet genom fem steg, från källan till reningsverket och tillbaka ut i naturen.</p>
+      </header>
+      <div class="story" id="story">
+        <div class="story-sticky" id="story-sticky"></div>
+        <ol class="story-steps" id="story-steps"></ol>
+      </div>
+      <p class="note">Beskrivningen är generell. NVOA kontrollerar och kompletterar den med fakta om det egna systemet.</p>
+    </div>
+  </section>
+
+  <section class="section alt" id="avfall" aria-labelledby="avfall-h">
+    <div class="wrap">
+      <header class="section-head">
+        <h2 id="avfall-h">Avfallets resa</h2>
+        <p class="lead">Sortera åtta vanliga saker. Förpackningarna är tomma. Dra varje sak till rätt kärl, eller tryck på saken och sedan på kärlet.</p>
+        <p class="flag"><strong>Exempel för demon:</strong> fraktionerna är generella. NVOA bekräftar vilka fraktioner och regler som gäller i Nacka.</p>
+      </header>
+      <div class="game" id="game">
+        <div class="game-bar">
+          <p id="game-progress" class="game-progress" aria-live="off">0 av 8 rätt</p>
+          <button type="button" class="btn btn-small" id="game-reset">Börja om</button>
+        </div>
+        <ul class="items" id="items" aria-label="Saker att sortera"></ul>
+        <div class="bins" id="bins" role="group" aria-label="Kärl"></div>
+        <p class="feedback" id="feedback" role="status" aria-live="polite">Välj en sak för att börja.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="bilder" aria-labelledby="bilder-h">
+    <div class="wrap">
+      <header class="section-head">
+        <h2 id="bilder-h">Bilder</h2>
+        <p class="lead">Nio illustrationer som visar hur arbetet med vatten och avfall kan se ut. Tryck på en bild för att förstora den.</p>
+      </header>
+      <ul class="gallery" id="gallery"></ul>
+    </div>
+  </section>
+
+  <section class="section alt" id="filmer" aria-labelledby="filmer-h">
+    <div class="wrap">
+      <header class="section-head">
+        <h2 id="filmer-h">Filmer</h2>
+        <p class="lead">Tre korta illustrerade filmer utan ljud. Texten i bild följer med, och hela texten finns under varje film.</p>
+      </header>
+      <div class="films" id="films"></div>
+    </div>
+  </section>
+
+  <section class="section" id="drift" aria-labelledby="drift-h">
+    <div class="wrap">
+      <header class="section-head">
+        <h2 id="drift-h">Driftinformation</h2>
+        <p class="lead">Här skulle aktuella driftstörningar och planerade arbeten visas.</p>
+        <p class="flag"><strong>Exempeldata:</strong> de tre meddelandena nedan är påhittade och visar bara hur sidan kan fungera. Kartan är förenklad och saknar verkliga gatunamn.</p>
+      </header>
+      <div class="drift" id="drift-grid">
+        <ul class="drift-list" id="drift-list"></ul>
+        <div class="map" id="map"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="kontakt" aria-labelledby="kontakt-h">
+    <div class="wrap">
+      <header class="section-head">
+        <h2 id="kontakt-h">Kontakt och kundservice</h2>
+        <p class="lead">Här skulle du hitta hur du når oss. Allt nedan är platshållare som NVOA fyller i.</p>
+      </header>
+      <dl class="contact" id="contact"></dl>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p><strong>Det här är en konceptdemo.</strong> Den visar ett förslag på hur en webbplats för Nacka Vatten och Avfall (NVOA) skulle kunna se ut och är inte NVOA:s officiella webbplats.</p>
+    <p>Alla bilder och filmer är illustrationer som skapats för demon. Ingen logotyp, färgprofil eller text kommer från NVOA. Uppgifter inom [hakparenteser] är platshållare, och exempeldata är påhittad.</p>
+  </div>
+</footer>
+
+<dialog id="lightbox" class="lightbox" aria-labelledby="lb-title">
+  <div class="lb-inner">
+    <div class="lb-stage" id="lb-stage"></div>
+    <div class="lb-meta">
+      <h2 id="lb-title" class="lb-title"></h2>
+      <p id="lb-source" class="lb-source"></p>
+    </div>
+    <div class="lb-bar">
+      <button type="button" class="btn btn-light" id="lb-prev">Föregående</button>
+      <span id="lb-count" class="lb-count" aria-live="polite"></span>
+      <button type="button" class="btn btn-light" id="lb-next">Nästa</button>
+      <button type="button" class="btn btn-accent" id="lb-close">Stäng</button>
+    </div>
+  </div>
+</dialog>
+
+<noscript><p class="noscript">Den här konceptdemon behöver JavaScript för att visa bilder, filmer och spelet.</p></noscript>
+<script src="media/manifest.js"></script>
+<script src="js/content.js"></script>
+<script src="js/media.js"></script>
+<script src="js/app.js"></script>
+<script src="js/story.js"></script>
+<script src="js/game.js"></script>
+<script src="js/lightbox.js"></script>
+<script src="js/drift.js"></script>
+</body>
+</html>
